@@ -7,6 +7,7 @@ DEPENDENCIES
 
 GRAPH
   apache2 (5.0.1)
+  apt (6.1.4)
   ark (2.2.1)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
@@ -30,6 +31,7 @@ GRAPH
   nagios_v_shell (0.1.0)
     ark (~> 2.0)
   nagios_v_shell_test (0.1.0)
+    apt (>= 0.0.0)
     nagios (>= 0.0.0)
     rsync (>= 0.0.0)
     zip (>= 0.0.0)
