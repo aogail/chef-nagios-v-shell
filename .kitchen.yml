@@ -17,4 +17,5 @@ platforms:
 suites:
   - name: default
     run_list:
+      - recipe[nagios_v_shell_test::default]
       - recipe[nagios_v_shell::default]
