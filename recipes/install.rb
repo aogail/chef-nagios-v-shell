@@ -24,4 +24,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-include_recipe 'nagios_v_shell::install'
+ark 'nagios-v-shell' do
+  action :install
+  url node['nagios_v_shell']['download_url']
+  checksum node['nagios_v_shell']['checksum']
+  version node['nagios_v_shell']['version']
+  backup false
+end
