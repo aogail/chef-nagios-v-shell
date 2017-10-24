@@ -8,5 +8,9 @@ version '0.2.2'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 issues_url 'https://github.com/aogail/chef-nagios-v-shell/issues'
 source_url 'https://github.com/aogail/chef-nagios-v-shell'
+supports 'ubuntu', '>= 16.04'
+supports 'oracle', '>= 7.0'
+supports 'centos', '>= 7.0'
+supports 'redhat', '>= 7.0'
 
 depends 'ark', '~> 2.0'
