@@ -1,12 +1,16 @@
 name 'nagios_v_shell'
-maintainer 'The Authors'
+maintainer 'Ben Jansen'
 maintainer_email 'aogail@w007.org'
 license 'MIT'
 description 'Installs/Configures nagios_v_shell'
 long_description 'Installs/Configures nagios_v_shell'
-version '0.2.2'
+version '0.2.3'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 issues_url 'https://github.com/aogail/chef-nagios-v-shell/issues'
 source_url 'https://github.com/aogail/chef-nagios-v-shell'
+supports 'ubuntu', '>= 16.04'
+supports 'oracle', '>= 7.0'
+supports 'centos', '>= 7.0'
+supports 'redhat', '>= 7.0'
 
 depends 'ark', '~> 2.0'
