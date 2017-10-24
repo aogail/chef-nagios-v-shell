@@ -1,5 +1,5 @@
 name 'nagios_v_shell'
-maintainer 'The Authors'
+maintainer 'Ben Jansen'
 maintainer_email 'aogail@w007.org'
 license 'MIT'
 description 'Installs/Configures nagios_v_shell'
