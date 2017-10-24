@@ -8,4 +8,5 @@ group :development do
   gem 'serverspec'
   gem 'test-kitchen'
   gem 'kitchen-vagrant'
+  gem 'rake-foodcritic'
 end

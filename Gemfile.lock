@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    backports (3.10.3)
     berkshelf (6.3.1)
       buff-config (~> 2.0)
       buff-extensions (~> 2.0)
@@ -79,6 +80,11 @@ GEM
       uuidtools (~> 2.1)
     cleanroom (1.0.0)
     concurrent-ruby (1.0.5)
+    cucumber-core (3.0.0)
+      backports (>= 3.8.0)
+      cucumber-tag_expressions (>= 1.0.1)
+      gherkin (>= 4.1.3)
+    cucumber-tag_expressions (1.0.1)
     diff-lcs (1.3)
     erubis (2.7.0)
     faraday (0.13.1)
@@ -86,7 +92,16 @@ GEM
     ffi (1.9.18)
     ffi-yajl (2.3.1)
       libyajl2 (~> 1.2)
+    foodcritic (12.0.1)
+      cucumber-core (>= 1.3)
+      erubis
+      ffi-yajl (~> 2.0)
+      nokogiri (>= 1.5, < 2.0)
+      rake
+      rufus-lru (~> 1.0)
+      treetop (~> 1.4)
     fuzzyurl (0.9.0)
+    gherkin (5.0.0)
     gssapi (1.2.0)
       ffi (>= 1.0.1)
     gyoku (1.3.1)
@@ -110,6 +125,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
+    mini_portile2 (2.3.0)
     minitar (0.6.1)
     mixlib-archive (0.4.1)
       mixlib-log
@@ -138,6 +154,8 @@ GEM
       net-ssh-gateway (>= 1.2.0)
     net-telnet (0.1.1)
     nio4r (2.1.0)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
     nori (2.6.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -154,10 +172,14 @@ GEM
       systemu (~> 2.6.4)
       wmi-lite (~> 1.0)
     plist (3.3.0)
+    polyglot (0.3.5)
     proxifier (1.0.3)
     public_suffix (3.0.0)
     rack (2.0.3)
     rake (12.1.0)
+    rake-foodcritic (0.0.3)
+      foodcritic (>= 3.0.0)
+      rake
     retryable (2.0.4)
     ridley (5.1.1)
       addressable
@@ -198,6 +220,7 @@ GEM
       rspec-core (>= 2, < 4, != 2.12.0)
     rubyntlm (0.6.2)
     rubyzip (1.2.1)
+    rufus-lru (1.1.0)
     safe_yaml (1.0.4)
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
@@ -236,6 +259,8 @@ GEM
     thor (0.19.1)
     timers (4.0.4)
       hitimes
+    treetop (1.6.8)
+      polyglot (~> 0.3)
     uuidtools (2.1.5)
     varia_model (0.6.0)
       buff-extensions (~> 2.0)
@@ -266,6 +291,7 @@ DEPENDENCIES
   berkshelf (>= 6.3.1)
   kitchen-vagrant
   rake
+  rake-foodcritic
   serverspec
   stove
   test-kitchen
