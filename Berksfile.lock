@@ -28,7 +28,7 @@ GRAPH
     php-fpm (>= 0.7.9)
     yum-epel (>= 0.0.0)
     zap (>= 0.6.0)
-  nagios_v_shell (0.2.2)
+  nagios_v_shell (0.2.3)
     ark (~> 2.0)
   nagios_v_shell_test (0.1.0)
     apt (>= 0.0.0)
